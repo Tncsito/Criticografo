@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Criticografo_DA_EESA.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="Ivory" Padding="24" CornerRadius="0">
+            <Label Text="Actividad: Criticografo!" HorizontalTextAlignment="Center" TextColor="Gray" FontSize="30"/>
+        </Frame>
+        <StackLayout Padding="40,20,40,0">
+            <Label Text="Nombre" />
+            <Entry Placeholder="Miguel"/>
+            <Label Text="Genero" />
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="10" >
+                <RadioButton Content="Hombre" GroupName="Hombre" IsChecked="False" Grid.Column="0"/>
+                <RadioButton Content="Mujer" GroupName="Mujer"  IsChecked="False" Grid.Column="1"/>
+            </Grid>
+            <Grid ColumnDefinitions="*,*,*,*" RowDefinitions="*,*,*" ColumnSpacing="5" VerticalOptions="Center" Padding="0,20,0,0">
+                
+                <CheckBox Grid.Column="0" Grid.Row="0" IsChecked="False" HorizontalOptions="EndAndExpand"/><!----><Label Text="Alto"  Grid.Column="1" Grid.Row="0" VerticalOptions="Center"/><!----><CheckBox Grid.Column="2" Grid.Row="0" IsChecked="False"/><!----><Label Text="Feo" Grid.Column="3" Grid.Row="0" VerticalOptions="Center"/>
+                <CheckBox Grid.Column="0" Grid.Row="1" IsChecked="False" HorizontalOptions="EndAndExpand"/><!----><Label Text="Listo" Grid.Column="1" Grid.Row="1" VerticalOptions="Center"/><!----><CheckBox Grid.Column="2" Grid.Row="1" IsChecked="False"/><!----><Label Text="Extravagante" Grid.Column="3" Grid.Row="1" VerticalOptions="Center"/>
+                <CheckBox Grid.Column="0" Grid.Row="2" IsChecked="False" HorizontalOptions="EndAndExpand"/><!----><Label Text="Raro"  Grid.Column="1" Grid.Row="2" VerticalOptions="Center"/><!----><CheckBox Grid.Column="2" Grid.Row="2" IsChecked="False"/><!----><Label Text="Grande" Grid.Column="3" Grid.Row="2" VerticalOptions="Center"/>
+                
+            </Grid>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
