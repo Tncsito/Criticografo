@@ -9,19 +9,18 @@
         </Frame>
         <StackLayout Padding="40,20,40,0">
             <Label Text="Nombre" />
-            <Entry Placeholder="Miguel"/>
+            <Entry Placeholder="Miguel" x:Name="Nombre"/>
             <Label Text="Genero" />
             <Grid ColumnDefinitions="*,*" ColumnSpacing="10" >
-                <RadioButton Content="Hombre" GroupName="Hombre" IsChecked="False" Grid.Column="0"/>
-                <RadioButton Content="Mujer" GroupName="Mujer"  IsChecked="False" Grid.Column="1"/>
+                <RadioButton Content="Hombre" GroupName="Genero" IsChecked="true" Grid.Column="0" x:Name="H"/>
+                <RadioButton Content="Mujer" GroupName="Genero" Grid.Column="1" x:Name="M"/>
             </Grid>
             <Grid ColumnDefinitions="*,*,*,*" RowDefinitions="*,*,*" ColumnSpacing="5" VerticalOptions="Center" Padding="0,20,0,0">
-                
-                <CheckBox Grid.Column="0" Grid.Row="0" IsChecked="False" HorizontalOptions="EndAndExpand"/><!----><Label Text="Alto"  Grid.Column="1" Grid.Row="0" VerticalOptions="Center"/><!----><CheckBox Grid.Column="2" Grid.Row="0" IsChecked="False"/><!----><Label Text="Feo" Grid.Column="3" Grid.Row="0" VerticalOptions="Center"/>
-                <CheckBox Grid.Column="0" Grid.Row="1" IsChecked="False" HorizontalOptions="EndAndExpand"/><!----><Label Text="Listo" Grid.Column="1" Grid.Row="1" VerticalOptions="Center"/><!----><CheckBox Grid.Column="2" Grid.Row="1" IsChecked="False"/><!----><Label Text="Extravagante" Grid.Column="3" Grid.Row="1" VerticalOptions="Center"/>
-                <CheckBox Grid.Column="0" Grid.Row="2" IsChecked="False" HorizontalOptions="EndAndExpand"/><!----><Label Text="Raro"  Grid.Column="1" Grid.Row="2" VerticalOptions="Center"/><!----><CheckBox Grid.Column="2" Grid.Row="2" IsChecked="False"/><!----><Label Text="Grande" Grid.Column="3" Grid.Row="2" VerticalOptions="Center"/>
-                
+                <CheckBox Grid.Column="0" Grid.Row="0" IsChecked="False" HorizontalOptions="EndAndExpand" x:Name="Alto" /><!-- --><Label Text="Alto"  Grid.Column="1" Grid.Row="0" VerticalOptions="Center"/><!----><CheckBox Grid.Column="2" Grid.Row="0" IsChecked="False" x:Name="Feo"/><!----><Label Text="Feo" Grid.Column="3" Grid.Row="0" VerticalOptions="Center" Margin="-40,0,0,0"/>
+                <CheckBox Grid.Column="0" Grid.Row="1" IsChecked="False" HorizontalOptions="EndAndExpand" x:Name="Listo"/><!----><Label Text="Listo" Grid.Column="1" Grid.Row="1" VerticalOptions="Center"/><!----><CheckBox Grid.Column="2" Grid.Row="1" IsChecked="False" x:Name="Extravagante"/><!----><Label Text="Extravagante" Grid.Column="3" Grid.Row="1" VerticalOptions="Center" Margin="-40,0,0,0"/>
+                <CheckBox Grid.Column="0" Grid.Row="2" IsChecked="False" HorizontalOptions="EndAndExpand" x:Name="Raro" /><!-- --><Label Text="Raro"  Grid.Column="1" Grid.Row="2" VerticalOptions="Center"/><!----><CheckBox Grid.Column="2" Grid.Row="2" IsChecked="False" x:Name="Grande"/><!----><Label Text="Grande" Grid.Column="3" Grid.Row="2" VerticalOptions="Center" Margin="-40,0,0,0"/>
             </Grid>
+            <Button Text="Criticar" Margin="50,0,50,0" FontSize="20"  Clicked="R_Clicked" />
         </StackLayout>
     </StackLayout>
 
