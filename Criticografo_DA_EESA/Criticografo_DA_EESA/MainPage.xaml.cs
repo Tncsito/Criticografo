@@ -21,37 +21,62 @@ namespace Criticografo_DA_EESA
             string a = _Nombre + " es";
             if (M.IsChecked)
             {
-                a = a + " Mujer, ";
+                a = a + " Mujer";
+                if (Alto.IsChecked)
+                {
+                    a = a + ", Alta";
+                }
+                if (Listo.IsChecked)
+                {
+                    a = a + ", lista";
+                }
+                if (Raro.IsChecked)
+                {
+                    a = a + ", Rara";
+                }
+                if (Feo.IsChecked)
+                {
+                    a = a + ", Fea";
+                }
+                if (Extravagante.IsChecked)
+                {
+                    a = a + ", Extravagante";
+                }
+                if (Grande.IsChecked)
+                {
+                    a = a + ", Grande";
+                }
             }
-            if (H.IsChecked)
+            else if (H.IsChecked)
             {
-                a = a + " Hombre, ";
+                a = a + " Hombre";
+
+                if (Alto.IsChecked)
+                {
+                    a = a + ", Alto";
+                }
+                if (Listo.IsChecked)
+                {
+                    a = a + ", listo";
+                }
+                if (Raro.IsChecked)
+                {
+                    a = a + ", Raro";
+                }
+                if (Feo.IsChecked)
+                {
+                    a = a + ", Feo";
+                }
+                if (Extravagante.IsChecked)
+                {
+                    a = a + ", Extravagante";
+                }
+                if (Grande.IsChecked)
+                {
+                    a = a + ", Grande";
+                }
             }
-            if (Alto.IsChecked)
-            {
-                a = a + " Alto, ";
-            }
-            if (Listo.IsChecked)
-            {
-                a = a + " listo, ";
-            }
-            if (Raro.IsChecked)
-            {
-                a = a + " Raro, ";
-            }
-            if (Feo.IsChecked)
-            {
-                a = a + " Feo, ";
-            }
-            if (Extravagante.IsChecked)
-            {
-                a = a + " Extravagante, ";
-            }
-            if (Grande.IsChecked)
-            {
-                a = a + " Grande. ";
-            }
-            DisplayAlert("Resultado", a, "Cerrar");
+            DisplayAlert("Resultado",a+".", "Cerrar");
 
         }
     }
